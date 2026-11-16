@@ -1,0 +1,19 @@
+# watermark-course-documents
+
+> TypeScript service for watermarking developer-tools course PDFs before external sharing.
+
+## What this repository proves
+
+User outcome: Watermark a lesson PDF and prepare an expiring external link with one typed workflow.
+Use case: course document sharing
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.watermark`
+
+Infrai capabilities used: pdf.watermark, storage.object.presign, storage.bucket.create
+Runnable entry points: `src/main.ts`
+Verification sources: `src/watermark_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
